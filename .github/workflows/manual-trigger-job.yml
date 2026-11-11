@@ -18,6 +18,5 @@ jobs:
     - name: Run Azure Machine Learning training job
       run: |
         az ml job create -f src/job.yml --stream \
-       --resource-group ${{ vars.AZURE_RESOURCE_GROUP }} \
-       --workspace-name ${{ vars.AZURE_AML_WORKSPACE }}
-
+          --resource-group ${{ vars.AZURE_RESOURCE_GROUP }} \
+          --workspace-name ${{ vars.AZURE_AML_WORKSPACE }}
